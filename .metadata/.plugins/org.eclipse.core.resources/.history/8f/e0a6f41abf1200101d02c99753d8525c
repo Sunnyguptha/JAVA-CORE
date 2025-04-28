@@ -1,0 +1,21 @@
+package com.list.java;
+import java.util.*;
+public class VectorPractice_02 {
+public static void main(String[] args) {
+	 
+	int[] arr=new int[] {1,2,3,6,4};
+	//Vector v1=new Vector(Arrays.asList(arr));
+	//v1.add("hyderabad");
+	
+	System.out.println();
+	
+	
+	
+	
+	
+//	for(Object inter:v1)
+//	{
+//		System.out.println(inter);
+//	}
+}
+}

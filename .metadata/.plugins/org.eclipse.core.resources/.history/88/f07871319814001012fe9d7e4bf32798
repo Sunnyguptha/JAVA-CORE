@@ -1,0 +1,27 @@
+package com.iterator.java;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Enumeration;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Vector;
+
+public class Iterrator_01 {
+
+	public static void main(String[] args) {
+		List<String> list=new ArrayList<>();
+		list.add("Banana");
+		list.add("Orange");
+		list.add("Apple");
+		
+		
+		Iterator<String> i=list.iterator();
+		
+		while(i.hasNext()) {
+			System.out.println(i.next());
+		}
+		
+	}
+
+}

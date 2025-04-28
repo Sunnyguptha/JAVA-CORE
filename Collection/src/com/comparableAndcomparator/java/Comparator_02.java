@@ -1,0 +1,33 @@
+package com.comparableAndcomparator.java;
+
+import java.util.Arrays;
+import java.util.Comparator;
+
+public class Comparator_02 {
+
+	public static void main(String[] args) {
+		
+		Comparator<Integer> comp=new Comparator<Integer>() {
+
+			@Override
+			public int compare(Integer x, Integer y) {
+				
+				//return (x<y)?1:((x==y)?0:-1);
+				return (x<y)?-1:((x==y)?0:1);
+			
+				
+				
+				
+			}
+			
+		};
+		
+		Integer[] arr=new Integer[] {1,5,12,6,2,4,3};
+				Arrays.sort(arr,comp);
+				
+				System.out.println(Arrays.toString(arr));
+		
+		
+	}
+
+}

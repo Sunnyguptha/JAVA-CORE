@@ -1,0 +1,29 @@
+package com.list.java;
+
+import java.util.Stack;
+
+public class StackPractice_02 {
+
+	public static void main(String[] args) {
+		
+		Stack<String> book=new Stack<>();
+		book.add("Banana");
+		book.add("orange");
+		book.add("mangoe");
+		book.add("Red");
+		book.add("Black");
+		
+		System.out.println(book);
+		book.add("graphs");
+		System.out.println(book);
+		
+		//System.out.println(book.peek());
+		//System.out.println(book.pop());
+		
+		System.out.println(book.search("Red"));
+		System.out.println(book.search("Black"));
+		System.out.println(book);
+
+	}
+
+}

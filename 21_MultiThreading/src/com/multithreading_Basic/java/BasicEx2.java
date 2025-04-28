@@ -1,0 +1,27 @@
+package com.multithreading_Basic.java;
+
+public class BasicEx2 {
+
+	public static void main(String[] args) {
+	
+		Thread t1=new Thread();
+		System.out.println(Thread.activeCount());
+		System.out.println(t1.getState());
+		t1.start();
+		System.out.println(t1.getState());
+		Thread t2=new Thread();
+		t2.start();
+		System.out.println(t2.getState());
+		Thread t3=new Thread();
+		t3.start();
+		System.out.println(t3.getState());
+		Thread t4=new Thread();
+		t4.start();
+		System.out.println(t4.getState());
+		System.out.println(Thread.activeCount());
+		
+
+	}
+
+}
+

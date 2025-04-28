@@ -1,0 +1,31 @@
+package com.list.java;
+
+import java.util.Stack;
+
+public class StackPractice_01 {
+
+	public static void main(String[] args) {
+		//LIFO=LAST IN FIRST OUT
+		Stack<String> book=new Stack<>();
+		book.add("Banana");
+		book.add("orange");
+		book.add("mangoe");
+		book.add("Red");
+		book.add("Black");
+		book.add(null);
+		book.add("Red");
+		book.add("Banana");
+	     //	book.remove(5);
+		//book.remove("Red");
+	//	book.remove("Banana");
+		
+		System.out.println(book);
+		book.set(3,"aashvi");
+		System.out.println(book);
+		
+		System.out.println(book.contains(book));
+		
+		
+	}
+
+}

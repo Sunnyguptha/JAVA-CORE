@@ -1,0 +1,82 @@
+package com.List_Collection.java;
+
+public class ObjectArray_01 {
+
+    public static void main(String[] args) {
+    	//Corrected Object Array Code
+    	
+    	Object[] obj = new Object[3];  // Fixed array with size 3
+
+        obj[0] = new Employee();
+        obj[1] = new Students();
+        obj[2] = "Hyderabad";
+
+        for (Object o : obj) {
+            System.out.println(o);
+        }
+    }
+}
+
+class Employee {
+    int id = 1;
+    String name = "Ravi";
+
+    @Override
+    public String toString() {
+        return "Employee [id=" + id + ", name=" + name + "]";
+    }
+}
+
+class Students {
+    int roll = 2;
+    String name = "Guptha";
+
+    @Override
+    public String toString() {
+        return "Students [roll=" + roll + ", name=" + name + "]";
+    }
+}
+
+//  ✅ Second: Use Java's Built-in ArrayList
+
+/*
+package com.list.java;
+
+import java.util.ArrayList;
+
+public class ObjectArray_01 {
+
+    public static void main(String[] args) {
+        ArrayList<Object> list = new ArrayList<>();
+
+        list.add(new Employee());
+        list.add(new Students());
+        list.add("Hyderabad");
+
+        for (Object o : list) {
+            System.out.println(o);
+        }
+    }
+}
+
+class Employee {
+    int id = 1;
+    String name = "Ravi";
+
+    @Override
+    public String toString() {
+        return "Employee [id=" + id + ", name=" + name + "]";
+    }
+}
+
+class Students {
+    int roll = 2;
+    String name = "Guptha";
+
+    @Override
+    public String toString() {
+        return "Students [roll=" + roll + ", name=" + name + "]";
+    }
+}
+
+*/

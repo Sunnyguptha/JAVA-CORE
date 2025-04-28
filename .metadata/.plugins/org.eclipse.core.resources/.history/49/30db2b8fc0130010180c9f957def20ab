@@ -1,0 +1,26 @@
+package com.map.java;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class HashMapPractice_02 {
+
+	public static void main(String[] args) {
+		
+		Map<Integer,String>m=new HashMap<>();
+		
+		m.put(101,"Java");
+		m.put(102,"python");
+		m.put(103,"C++");
+		
+		for(Map.Entry<Integer, String>entry:m.entrySet()) {
+			Integer key=entry.getKey();
+			String val=entry.getValue();
+			
+			System.out.println(key+"=>"+val);
+			//System.out.println(entry.getKey() + " => " + entry.getValue());
+		}
+		
+	}
+
+}

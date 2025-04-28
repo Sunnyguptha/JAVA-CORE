@@ -1,0 +1,32 @@
+package com.list.java;
+
+import java.util.ArrayList;
+
+public class ArrayListPractice_01 {
+
+	public static void main(String[] args) {
+		ArrayList<Integer> list=new ArrayList<>();
+		
+		list.add(5);
+		list.add(7);
+		list.add(0,3);
+		list.add(4);
+		list.add(7);
+		
+		
+		
+		System.out.println("original value="+list);
+		//System.out.println(list.size());
+		//System.out.println(list.get(3));
+		//System.out.println(list.remove(1));
+	//list.removeAll(list);
+		
+	//	System.out.println(list.removeAll(list));
+		
+		list.set(2, 1)
+		
+		System.out.println("Last values="+list);
+
+	}
+
+}

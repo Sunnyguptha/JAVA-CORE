@@ -1,0 +1,39 @@
+package com.multithreading_Basic.java;
+
+public class ByUsingRunnable_3 {
+
+	public static void main(String[] args) {
+	
+		Employee4 e=new Employee4();
+		Thread t1=new Thread(e,"t1");
+		t1.start();
+		
+		Manager2 m=new Manager2();
+		Thread t2=new Thread(m,"t2");
+		t2.start();
+		
+		System.out.println(Thread.activeCount());
+		
+	}
+
+}
+
+class Employee4 implements Runnable
+{
+	
+	@Override
+	public void run() {
+		System.out.println("hello="+Thread.currentThread().getName()+" >>"+Thread.currentThread().getId());
+	}
+}
+
+//class Manager2 extends Thread implements Runnable
+
+class Manager2 implements Runnable
+{
+	
+	@Override
+	public void run() {
+		System.out.println("Bye="+Thread.currentThread().getName()+" >>"+Thread.currentThread().getId());
+	}
+}

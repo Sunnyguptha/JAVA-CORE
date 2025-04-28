@@ -1,0 +1,71 @@
+package com.comparableAndcomparator.java;
+
+import java.util.Arrays;
+import java.util.Comparator;
+
+public class ComparableAndComparator_02 {
+
+	public static void main(String[] args) {
+		
+		
+		Comparator<Student2> nameComparator=(s1,s2)->s1.name.compareTo(s2.name) ;
+		/*
+		{
+			public int compare(Student1 s1, Student1 s2) {
+				
+				return s1.name.compareTo(s2.name);
+			}
+		*/
+		
+			
+		
+		//};
+		
+		Student2[] students= {
+				
+				new Student2(101, "hyderabad", 300),
+				new Student2(105,"warangle", 500),
+				new Student2(103, "hanamkonda", 400),
+				new Student2(102,"kazipet", 700),
+				new Student2(104,"uppal", 800)
+		};
+		//Arrays.sort(students,nameComparator);
+	
+		Arrays.sort(students,nameComparator.reversed());
+		
+		System.out.println(Arrays.toString(students));
+		
+		
+		
+		
+		
+		
+	}
+
+}
+
+//==================================================================================
+class Student2 implements Comparable<Student2>
+{
+	int rollNo;
+	String name;
+	int marks;
+	
+	public Student2(int rollNo,String name,int marks) {
+		this.rollNo=rollNo;
+		this.name=name;
+		this.marks=marks;
+	}
+	
+	public String toString() {
+		return "Student1 {"+"rollNo="+rollNo+",name="+ name +",marks="+marks+"}"+"\n";
+	}
+
+	@Override
+	public int compareTo(Student2 anotherStudnet) {
+		
+		return Integer.compare(anotherStudnet.rollNo,this.rollNo);
+	}
+	
+
+}

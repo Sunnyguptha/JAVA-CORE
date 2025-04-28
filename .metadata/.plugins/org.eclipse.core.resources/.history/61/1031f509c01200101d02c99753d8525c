@@ -1,0 +1,34 @@
+package com.list.java;
+import java.util.*;
+public class VectorPractice_02 {
+public static void main(String[] args) {
+	 
+	Object[] arr=new Object[] {1,2,3,6,4};
+	//Vector v1=new Vector(Arrays.asList(arr));
+	//v1.add("hyderabad");
+	
+	
+	
+	
+	Vector v2=new Vector();
+	v2.addAll(Arrays.asList(arr));
+	System.out.println(v2);
+	
+	for(Object o:v2) {
+		System.out.println(o);
+	}
+	int sum=0;
+	for(int i=0;i<v2.size();i++)
+	{
+		sum+=i;
+		//sum+=(Integer)v2.get(i);
+	}
+	System.out.println(v2);
+	System.out.println(v2.size());
+	System.out.println(v2.capacity());
+	
+	
+	
+	
+}
+}

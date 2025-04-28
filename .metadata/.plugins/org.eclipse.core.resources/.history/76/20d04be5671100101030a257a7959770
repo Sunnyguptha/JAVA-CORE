@@ -1,0 +1,50 @@
+package com.multithreading_Methods.java;
+
+public class SleepMethodEx1 {
+
+	public static void main(String[] args) throws Exception {
+		Runnable r1 = () -> {
+			for (int i = 1; i <= 10; i++) {
+				System.out.println("hi=" + Thread.currentThread().getName() + " >>" + Thread.currentThread().getId());
+
+			}
+		};
+
+		Runnable r2 = () -> {
+			for (int i = 1; i <= 20; i++) {
+				System.out.println("hello=" + Thread.currentThread().getName() + " >>" + Thread.currentThread().getId());
+
+			}
+		};
+/*
+		Thread t1 = new Thread(r1,"t1");
+		System.out.println(t1.getState());
+		t1.start();
+		System.out.println(t1.getState());
+		t1.sleep(10000);
+		
+		Thread t2 = new Thread(r2,"t2");
+		t2.start();
+		System.out.println(t1.getState());
+		t1.start();
+		//System.out.println(t1.getState());
+	*/
+		Thread t1 = new Thread(r1,"t1");
+		Thread t2 = new Thread(r2,"t2");
+		System.out.println(t1.getState());
+		t1.start();
+		System.out.println(t1.getState());
+		t1.sleep(1000);
+		System.out.println(t1.getState());
+		t1.sleep();
+	}
+
+}
+
+
+//0-NEW
+//1-RUNNABLE
+//2-BLOCKED
+//3-WAITING ()JOIN
+//4-TIMED WAITNG (SPECIFIC TIME/SLEEP)
+//5-TERMINATED

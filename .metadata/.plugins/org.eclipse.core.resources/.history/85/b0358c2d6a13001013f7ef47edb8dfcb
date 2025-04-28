@@ -1,0 +1,29 @@
+package com.list.java;
+
+public class ObjectArray_01 {
+
+	public static void main(String[] args) {
+		Object obj[]=new Object[];
+		obj[0]=new Employee();
+		obj[1]=new Students();
+		obj[2]=new String("hyderabda");
+		
+		for(Object j:obj) {
+			Object o=Obj[];
+			System.out.println(0);
+		}
+
+	}
+
+}
+
+class Employee{
+	int i=1;
+	String name="ravi";
+}
+
+class Students{
+	int sno=2;
+	String name="guptha";
+	
+}

@@ -1,0 +1,16 @@
+package com.exception_basic.java;
+
+public class ProgramEx1 {
+
+	public static void main(String[] args) {
+	System.out.println(" program start");
+		int fNumber=2;
+		int sNumber=1;
+		
+		int tNumber=fNumber/sNumber;
+		
+		System.out.println("output="+tNumber);
+		System.out.println(" progmam end");
+	}
+
+}

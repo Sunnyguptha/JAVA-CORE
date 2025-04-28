@@ -1,0 +1,16 @@
+package com.list.java;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+
+public class ArrayListPractice_03 {
+
+	public static void main(String[] args) {
+		
+		int[] arr=new int[] {1,2,3,4,5};
+		ArrayList<Integer> list=new ArrayList<>(Arrays.asList(arr));
+		list.addAll(arr);
+	
+	}
+
+}

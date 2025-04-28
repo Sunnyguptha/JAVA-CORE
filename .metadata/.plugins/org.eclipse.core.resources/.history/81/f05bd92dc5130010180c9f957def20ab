@@ -1,0 +1,26 @@
+package comQueue_Collection.java;
+
+import java.util.ArrayDeque;
+
+public class ArrayDeque_01 {
+
+	public static void main(String[] args) {
+		
+		ArrayDeque<String> ad=new ArrayDeque<>();
+		ad.add("Banana");
+		ad.add("Cherry");
+		ad.add("Apple");
+		ad.offer("Kiwi");
+		ad.offer("pear");
+		ad.offer("Mango");
+		
+		System.out.println(ad);
+		
+		//System.out.println(ad.peek());
+		//System.out.println(ad.peekFirst());
+		
+		System.out.println(ad.peekLast());
+
+	}
+
+}

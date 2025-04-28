@@ -1,0 +1,12 @@
+package com.map.java;
+
+public class HashMapPractice_02 {
+
+	public static void main(String[] args) {
+		
+		Map<Integer,String>m=new Map<>()
+		
+		
+	}
+
+}

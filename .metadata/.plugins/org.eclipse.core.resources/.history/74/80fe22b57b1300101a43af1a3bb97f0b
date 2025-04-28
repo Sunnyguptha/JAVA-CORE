@@ -1,0 +1,34 @@
+package com.list.java;
+
+import java.util.ArrayList;
+
+public class ArrayListPractice_02 {
+public static void main(String[] args) {
+	
+	
+	ArrayList<String> mainlist=new ArrayList<>();
+	mainlist.add("mangoes");
+	mainlist.add("banana");
+	mainlist.add("apple");
+	mainlist.add("pinapple");
+	mainlist.add("orange");
+	ArrayList<String> removelist=new ArrayList<>();
+	removelist.add("banana");
+	removelist.add("apple");
+	removelist.add("pinapple");
+	removelist.add("guptha");
+	
+	int index1=mainlist.indexOf("apple");
+	int index2=mainlist.indexOf("mangoes");
+	System.out.println(index2);
+	System.out.println(index1);
+	
+	
+	//System.out.println("Before removeAll: " + mainlist);
+	
+	//mainlist.removeAll(removelist);
+	
+	//System.out.println("After removeAll: " + mainlist);
+	
+}
+}

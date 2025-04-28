@@ -1,0 +1,19 @@
+package com.list.java;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+
+public class ArrayListPractice_03 {
+
+	public static void main(String[] args) {
+		
+		Integer[] arr=new Integer[] {1,2,3,4,5};
+		ArrayList<Integer> list=new ArrayList<>(Arrays.asList(arr));
+		for(Integer l:list) {
+			System.out.println(l);
+			
+		}
+	
+	}
+
+}

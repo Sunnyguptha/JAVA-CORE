@@ -1,0 +1,14 @@
+package com.properties.java;
+
+import java.util.Arrays;
+
+public class Properties {
+
+	public static void main(String[] args) {
+		 int[] arr=new int[] {3,2,5,1,76,9};
+		 //Arrays.sort(arr);
+		 System.out.println( Arrays.sort(arr));
+
+	}
+
+}

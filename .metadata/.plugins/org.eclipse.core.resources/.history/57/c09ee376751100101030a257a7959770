@@ -1,0 +1,15 @@
+package com.exception_Advance.java;
+
+public class CustomExceptionEx1 {
+
+    public static void main(String[] args) {
+        try {
+            System.out.println(1 / 0); // This will cause ArithmeticException
+        } catch (ArithmeticException e) {
+            // Wrapping the original exception with a custom message
+            throw new ArithmeticException("Division by zero error: " + e.getMessage());
+            
+        //	throw new ArithmeticException("stupid fellow,dont divide with zero");
+        }
+    }
+}
